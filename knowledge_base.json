@@ -1,0 +1,39 @@
+{
+    "main_menu": {
+        "1": "Introduction to Java",
+        "2": "Loops in Java",
+        "3": "OOP Concepts",
+        "4": "Exit"
+    },
+    "introduction_to_java": {
+        "1": "What is Java?",
+        "2": "What is JVM?",
+        "3": "What is JDK?",
+        "4": "Back to Main Menu"
+    },
+    "loops_in_java": {
+        "1": "For Loop",
+        "2": "While Loop",
+        "3": "Do-While Loop",
+        "4": "Back to Main Menu"
+    },
+    "oop_concepts": {
+        "1": "Inheritance",
+        "2": "Polymorphism",
+        "3": "Encapsulation",
+        "4": "Abstraction",
+        "5": "Back to Main Menu"
+    },
+    "answers": {
+        "What is Java?": "Java is a high-level, class-based, object-oriented programming language.",
+        "What is JVM?": "JVM stands for Java Virtual Machine. It provides a runtime environment to execute Java bytecode.",
+        "What is JDK?": "JDK stands for Java Development Kit. It is used to develop and run Java applications.",
+        "For Loop": "A for loop is used to repeat a block of code a specific number of times. Syntax: for(initialization; condition; update) { // code }",
+        "While Loop": "A while loop is used to execute a block of code as long as a specified condition is true. Syntax: while(condition) { // code }",
+        "Do-While Loop": "A do-while loop executes a block of code at least once, then repeats as long as the condition is true. Syntax: do { // code } while(condition);",
+        "Inheritance": "Inheritance allows one class to acquire properties and methods from another class.",
+        "Polymorphism": "Polymorphism allows methods to perform different tasks based on the object that calls them.",
+        "Encapsulation": "Encapsulation is the process of wrapping code and data together into a single unit.",
+        "Abstraction": "Abstraction hides implementation details and shows only the essential features of an object."
+    }
+}
