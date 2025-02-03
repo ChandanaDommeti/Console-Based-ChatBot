@@ -1,16 +1,16 @@
 import json
 
 def chatbot():
-    with open("knowledgebase.json", "r") as file:
-        knowledgebase = json.load(file)
+    with open("knowledge_base.json", "r") as file:
+        knowledge_base = json.load(file)
 
     print("Chatbot: Welcome to the Java Learning Chatbot!")
-    main_menu(knowledgebase)
+    main_menu(knowledge_base)
 
-def main_menu(knowledgebase):
+def main_menu(knowledge_base):
     while True:
         print("\nMain Menu:")
-        for key, value in knowledgebase["main_menu"].items():
+        for key, value in knowledge_base["main_menu"].items():
             print(f"{key}. {value}")
 
         try:
@@ -20,30 +20,30 @@ def main_menu(knowledgebase):
             continue
 
         if choice == 1:
-            submenu("introduction_to_java", knowledgebase)
+            submenu("introduction_to_java", knowledge_base)
         elif choice == 2:
-            submenu("loops_in_java", knowledgebase)
+            submenu("loops_in_java", knowledge_base)
         elif choice == 3:
-            submenu("oop_concepts", knowledgebase)
+            submenu("oop_concepts", knowledge_base)
         elif choice == 4:
             print("Chatbot: Goodbye! Have a great day!")
             break
         else:
             print("Chatbot: Invalid choice. Please try again.")
 
-def submenu(topic, knowledgebase):
+def submenu(topic, knowledge_base):
     while True:
         print(f"\n{topic.replace('_', ' ').title()}:")
-        for key, value in knowledgebase[topic].items():
+        for key, value in knowledge_base[topic].items():
             print(f"{key}. {value}")
 
         choice = input("\nChoose an option: ").strip()
-        if choice in knowledgebase[topic]:
-            sub_option = knowledgebase[topic][choice]
+        if choice in knowledge_base[topic]:
+            sub_option = knowledge_base[topic][choice]
             if sub_option == "Back to Main Menu":
                 return
-            elif sub_option in knowledgebase["answers"]:
-                print(f"\nChatbot: {knowledgebase['answers'][sub_option]}")
+            elif sub_option in knowledge_base["answers"]:
+                print(f"\nChatbot: {knowledge_base['answers'][sub_option]}")
             else:
                 print("Chatbot: No answer available for this choice.")
         else:
