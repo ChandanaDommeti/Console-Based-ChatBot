@@ -33,7 +33,7 @@
         "Do-While Loop": "A do-while loop executes a block of code at least once, then repeats as long as the condition is true. Syntax: do { // code } while(condition);",
         "Inheritance": "Inheritance allows one class to acquire properties and methods from another class.",
         "Polymorphism": "Polymorphism allows methods to perform different tasks based on the object that calls them.",
-        "Encapsulation": "Encapsulation is the process of wrapping code and data together into a single unit.",
-        "Abstraction": "Abstraction hides implementation details and shows only the essential features of an object."
+        "Encapsulation": " Encapsulation is the process of wrapping code and data together into a single unit.",
+        "Abstraction": "Abstraction hides implementation details and shows only the essential features of an object. "
     }
 }
