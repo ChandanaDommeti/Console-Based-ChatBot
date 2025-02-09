@@ -72,9 +72,4 @@ Chatbot: Java is a high-level, object-oriented programming language developed by
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
 
-## License
-This project is open-source and available under the MIT License.
-
----
-Feel free to update this README with your repository details. Happy coding! 🚀
 
